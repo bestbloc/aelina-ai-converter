@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Explorer - Aelina AI Cyborg Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=MS+Sans+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="ie-window">
+            <!-- Window Title Bar -->
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFYSURBVDiNpZM9SwNBEIafgwQLwcJCG1sLG1sLG0uxsLBQsLGwsLBQsLGwULCwsLBQsLGwsLBQsLBQsLGwsLBQsLBQsLGwsLBQsLBQsLCwsLCwsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQ==" alt="IE" class="ie-icon">
+                    Internet Explorer - Aelina AI Cyborg Converter
+                </div>
+                <div class="title-bar-controls">
+                    <button class="title-bar-control" aria-label="Minimize">
+                        <span class="minimize-icon">_</span>
+                    </button>
+                    <button class="title-bar-control" aria-label="Maximize">
+                        <span class="maximize-icon">□</span>
+                    </button>
+                    <button class="title-bar-control close" aria-label="Close">
+                        <span class="close-icon">×</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Bar -->
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Favorites</span>
+                <span class="menu-item">Tools</span>
+                <span class="menu-item">Help</span>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <button class="toolbar-btn" title="Back">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back</span>
+                </button>
+                <button class="toolbar-btn" title="Forward">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Forward</span>
+                </button>
+                <button class="toolbar-btn" title="Stop">
+                    <i class="fas fa-stop"></i>
+                    <span>Stop</span>
+                </button>
+                <button class="toolbar-btn" title="Refresh">
+                    <i class="fas fa-sync"></i>
+                    <span>Refresh</span>
+                </button>
+                <button class="toolbar-btn" title="Home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </button>
+            </div>
+
+            <!-- Address Bar -->
+            <div class="address-bar">
+                <label for="address-input">Address:</label>
+                <input type="text" id="address-input" value="https://aelina.ai/cyborg-converter" readonly>
+                <button class="go-btn">Go</button>
+            </div>
+
+            <!-- Browser Content Area -->
+            <div class="browser-content">
+                <div class="page-container">
+                    <!-- Aelina Header -->
+                    <div class="retro-header">
+                        <div class="aelina-portrait">
+                            <div class="portrait-frame">
+                                <!-- Multiple image sources for better reliability -->
+                                <img id="aelina-portrait-img" 
+                                     src="aelina.jpg" 
+                                     alt="Aelina AI" 
+                                     class="aelina-image"
+                                     onerror="this.onerror=null; tryNextImageSource(this);">
+                                <div class="portrait-placeholder" id="portrait-placeholder">
+                                    <div class="placeholder-text">
+                                        🤖<br>AELINA<br>AI<br><small>CYBORG ASSISTANT</small>
+                                    </div>
+                                </div>
+                                <!-- Portrait size toggle button -->
+                                <button class="portrait-toggle-btn" onclick="togglePortraitSize()" title="Toggle Portrait Size">
+                                    🔍
+                                </button>
+                            </div>
+                            <div class="aelina-info">
+                                <h1>🤖 Aelina AI</h1>
+                                <p>Your Retro Lady AI Assistant • Twitter → Cyborg Converter</p>
+                                <div class="aelina-greeting">
+                                    <marquee scrollamount="2">"Hi! I'm Aelina, your cyborg transformation specialist! Ready to cyborgify your Twitter profile? Let's make some 90s magic!" 💫</marquee>
+                                </div>
+                                <div class="image-controls">
+                                    <button class="retro-button small" onclick="forceShowAelinaImage()" title="Force Show Aelina's Portrait">
+                                        📸 Show Portrait
+                                    </button>
+                                    <button class="retro-button small" onclick="showAelinaPlaceholder()" title="Show Animated Placeholder">
+                                        🎨 Show Placeholder  
+                                    </button>
+                                    <button class="retro-button small" onclick="testTransformation()" title="Test Cyborg Transformation">
+                                        🧪 Test Cyborg
+                                    </button>
+                                    <button class="retro-button small" onclick="quickDemo()" title="Quick Demo with Sample Profile">
+                                        🚀 Quick Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="retro-banner">
+                            <span class="blink">✨ TRANSFORM YOUR TWITTER PROFILE INTO A CYBORG! ✨</span>
+                        </div>
+                    </div>
+
+                    <!-- Input Section -->
+                    <div class="retro-section">
+                        <div class="retro-box">
+                            <h2>🐦 Enter Twitter Handle</h2>
+                            <p>Type your Twitter username and click "CYBORGIFY!" to begin transformation...</p>
+                            
+                            <!-- Status Messages -->
+                            <div id="status-messages" class="status-messages" style="display: none;">
+                                <div class="status-text" id="status-text">Ready for transformation...</div>
+                            </div>
+                            
+                            <div class="retro-input-group">
+                                <label for="twitter-handle">Twitter Handle:</label>
+                                <div class="input-container">
+                                    <input type="text" id="twitter-handle" placeholder="@elonmusk" class="retro-input">
+                                    <button id="transform-btn" onclick="fetchAndTransform()" class="retro-button primary">
+                                        <span class="btn-text">CYBORGIFY!</span>
+                                        <span class="loading-spinner" style="display: none;">⚙️ PROCESSING...</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="retro-examples">
+                                <strong>Examples:</strong>
+                                <a href="#" onclick="fillHandle('@elonmusk')" class="retro-link">@elonmusk</a> |
+                                <a href="#" onclick="fillHandle('@sama')" class="retro-link">@sama</a> |
+                                <a href="#" onclick="fillHandle('@karpathy')" class="retro-link">@karpathy</a> |
+                                <a href="#" onclick="fillHandle('@jack')" class="retro-link">@jack</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transformation Section -->
+                    <div id="transformation-section" class="retro-section" style="display: none;">
+                        <div class="retro-box">
+                            <h2>🧪 Aelina's Cyborg Laboratory</h2>
+                            <div class="current-profile">
+                                Transforming: <span id="current-handle" class="highlight"></span>
+                                <button class="retro-button small" onclick="changeHandle()">Change</button>
+                            </div>
+
+                            <!-- Before/After Images -->
+                            <div class="transformation-display">
+                                <table class="retro-table" cellpadding="10" cellspacing="2">
+                                    <tr>
+                                        <th>👤 ORIGINAL</th>
+                                        <th>⚡</th>
+                                        <th>🤖 CYBORG</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <div class="retro-image-frame">
+                                                <img id="original-image" src="" alt="Original" width="200" height="200">
+                                                <div class="image-caption">Your Twitter Profile</div>
+                                            </div>
+                                        </td>
+                                        <td align="center" class="arrow-cell">
+                                            <div class="retro-arrow">
+                                                <div class="arrow-text">AELINA'S</div>
+                                                <div class="arrow-symbol">→</div>
+                                                <div class="arrow-text">MAGIC</div>
+                                            </div>
+                                        </td>
+                                        <td align="center">
+                                            <div class="retro-image-frame cyborg">
+                                                <canvas id="cyborg-canvas" width="200" height="200"></canvas>
+                                                <div class="image-caption">Your Cyborg Self</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!-- Cyborg Controls -->
+                            <div class="cyborg-controls">
+                                <h3>⚙️ CYBORG CUSTOMIZATION PANEL</h3>
+                                
+                                <table class="controls-table" cellpadding="5" cellspacing="2">
+                                    <tr>
+                                        <td><strong>👁️ GLOWING EYES:</strong></td>
+                                        <td><input type="range" id="eyeGlow" min="0" max="100" value="50" class="retro-slider" oninput="updateEffect('eyeGlow', this.value)"></td>
+                                        <td><span id="eyeGlow-value" class="value-display">50%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>🤖 METALLIC SKIN:</strong></td>
+                                        <td><input type="range" id="metallic" min="0" max="100" value="60" class="retro-slider" oninput="updateEffect('metallic', this.value)"></td>
+                                        <td><span id="metallic-value" class="value-display">60%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>⚡ CIRCUIT LINES:</strong></td>
+                                        <td><input type="range" id="circuits" min="0" max="100" value="40" class="retro-slider" oninput="updateEffect('circuits', this.value)"></td>
+                                        <td><span id="circuits-value" class="value-display">40%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>🌈 NEON GLOW:</strong></td>
+                                        <td><input type="range" id="neonGlow" min="0" max="100" value="45" class="retro-slider" oninput="updateEffect('neonGlow', this.value)"></td>
+                                        <td><span id="neonGlow-value" class="value-display">45%</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>⚙️ MECHANICAL PARTS:</strong></td>
+                                        <td><input type="range" id="mechanical" min="0" max="100" value="30" class="retro-slider" oninput="updateEffect('mechanical', this.value)"></td>
+                                        <td><span id="mechanical-value" class="value-display">30%</span></td>
+                                    </tr>
+                                </table>
+
+                                <!-- Preset Buttons -->
+                                <div class="preset-section">
+                                    <h4>🎯 INSTANT PRESETS:</h4>
+                                    <div class="preset-buttons">
+                                        <button class="retro-button preset" onclick="applyPreset('subtle')">
+                                            🔧 SUBTLE CYBORG
+                                        </button>
+                                        <button class="retro-button preset" onclick="applyPreset('intense')">
+                                            🔥 FULL CYBORG
+                                        </button>
+                                        <button class="retro-button preset" onclick="applyPreset('terminator')">
+                                            💀 TERMINATOR
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="action-section">
+                                <div class="retro-buttons">
+                                    <button class="retro-button primary large" onclick="downloadCyborg()">
+                                        💾 DOWNLOAD CYBORG.PNG
+                                    </button>
+                                    <button class="retro-button secondary" onclick="shareCyborg()">
+                                        📤 SHARE CREATION
+                                    </button>
+                                    <button class="retro-button secondary" onclick="resetTransformation()">
+                                        🔄 RESET EFFECTS
+                                    </button>
+                                </div>
+                                
+                                <div class="retro-notice">
+                                    <marquee>💡 TIP: Use presets first, then fine-tune with sliders for best results! 🤖</marquee>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Error Section -->
+                    <div id="error-section" class="retro-section" style="display: none;">
+                        <div class="retro-box error">
+                            <h2>❌ ERROR</h2>
+                            <p><strong>Aelina encountered an error:</strong></p>
+                            <div class="error-message" id="error-message"></div>
+                            <button onclick="goBack()" class="retro-button">🔄 TRY AGAIN</button>
+                        </div>
+                    </div>
+
+                    <!-- Retro Footer -->
+                    <div class="retro-footer">
+                        <div class="footer-content">
+                            <p><strong>💻 AELINA AI CYBORG CONVERTER v1.0</strong></p>
+                            <p>Built with ❤️ by Aelina • Best viewed in Internet Explorer 6.0+ • Screen resolution: 1024x768</p>
+                            <div class="retro-badges">
+                                <span class="badge">HTML 4.01</span>
+                                <span class="badge">CSS 2.1</span>
+                                <span class="badge">JavaScript ES3</span>
+                                <span class="badge">Y2K Compatible</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status Bar -->
+            <div class="status-bar">
+                <div class="status-left">
+                    <span class="status-item">Done</span>
+                </div>
+                <div class="status-right">
+                    <span class="status-item">Internet</span>
+                    <span class="status-item">Protected Mode: Off</span>
+                    <span class="status-item">🔒 100%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <button class="start-button">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFYSURBVDiNpZM9SwNBEIafgwQLwcJCG1sLG1sLG0uxsLBQsLGwsLBQsLGwULCwsLBQsLGwsLBQsLBQsLGwsLBQsLBQsLGwsLBQsLBQsLCwsLCwsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQ==" alt="Start" class="start-icon">
+                Start
+            </button>
+            <div class="taskbar-items">
+                <div class="taskbar-item active">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAdgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFYSURBVDiNpZM9SwNBEIafgwQLwcJCG1sLG1sLG0uxsLBQsLGwsLBQsLGwULCwsLBQsLGwsLBQsLBQsLGwsLBQsLBQsLGwsLBQsLBQsLCwsLCwsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQsLCwsLCwsLBQsLBQsLBQ==" alt="IE" class="ie-icon">
+                    Aelina AI - Internet Explorer
+                </div>
+            </div>
+            <div class="clock">
+                <span id="current-time">12:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
